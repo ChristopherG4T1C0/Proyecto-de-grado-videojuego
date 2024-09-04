@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxxxu6a3w3rby"]
+
+[ext_resource type="Script" path="res://gato_persona_1.gd" id="1_ci1kh"]
+[ext_resource type="Texture2D" uid="uid://c5k5fanurmrsd" path="res://sprites para el proyecto/Personaje gato 1.png" id="2_1x8fd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q4vhu"]
+radius = 74.8131
+
+[node name="gato persona 1" type="CharacterBody2D"]
+script = ExtResource("1_ci1kh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(26, -44)
+scale = Vector2(0.48125, 0.45625)
+texture = ExtResource("2_1x8fd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+position = Vector2(-55, 93)
+shape = SubResource("CircleShape2D_q4vhu")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c43ron6b8n3ya"]
+
+[ext_resource type="Texture2D" uid="uid://bc8j7hionnyp5" path="res://sprites para el proyecto/piso ajedrez.jpg" id="1_avhqt"]
+[ext_resource type="PackedScene" uid="uid://bxxxu6a3w3rby" path="res://gato_persona_1.tscn" id="2_os6tr"]
+
+[node name="mundo" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(573.75, 321.375)
+scale = Vector2(1.92014, 1.10589)
+texture = ExtResource("1_avhqt")
+
+[node name="gato persona 1" parent="." instance=ExtResource("2_os6tr")]
+position = Vector2(567, 337)
