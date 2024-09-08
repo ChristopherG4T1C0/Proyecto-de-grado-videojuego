@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctbwk4d3fh66i"]
+[gd_scene load_steps=7 format=3 uid="uid://c43ron6b8n3ya"]
 
 [ext_resource type="Texture2D" uid="uid://bc8j7hionnyp5" path="res://sprites para el proyecto/piso ajedrez.jpg" id="1_avhqt"]
-[ext_resource type="PackedScene" path="res://gato_persona_1.tscn" id="2_os6tr"]
-[ext_resource type="PackedScene" path="res://prefesor_gato.tscn" id="3_ll23n"]
-[ext_resource type="PackedScene" path="res://pupitre.tscn" id="4_lrqmr"]
+[ext_resource type="PackedScene" uid="uid://bxxxu6a3w3rby" path="res://escenas/gato_persona_1.tscn" id="2_os6tr"]
+[ext_resource type="PackedScene" uid="uid://dea3k2rsqu6gk" path="res://escenas/prefesor_gato.tscn" id="3_ll23n"]
+[ext_resource type="PackedScene" uid="uid://b4wxyale7mb4y" path="res://escenas/pupitre.tscn" id="4_lrqmr"]
+[ext_resource type="PackedScene" uid="uid://o31p6osmv0kt" path="res://escenas/pared.tscn" id="5_bmb16"]
+[ext_resource type="Texture2D" uid="uid://clwklrcggfjt6" path="res://sprites para el proyecto/tablero 2.png" id="6_xu7w0"]
 
 [node name="mundo" type="Node2D"]
 y_sort_enabled = true
@@ -16,10 +18,10 @@ scale = Vector2(1.99653, 1.1952)
 texture = ExtResource("1_avhqt")
 
 [node name="gato persona 1" parent="." instance=ExtResource("2_os6tr")]
-position = Vector2(567, 337)
+position = Vector2(405, 373)
 
 [node name="prefesor gato" parent="." instance=ExtResource("3_ll23n")]
-position = Vector2(976, 134)
+position = Vector2(966, 204)
 
 [node name="pupitre" parent="." instance=ExtResource("4_lrqmr")]
 position = Vector2(401, 340)
@@ -44,3 +46,12 @@ position = Vector2(584, 242)
 
 [node name="pupitre5" parent="pupitre" instance=ExtResource("4_lrqmr")]
 position = Vector2(-265, 236)
+
+[node name="pared" parent="." instance=ExtResource("5_bmb16")]
+position = Vector2(435, 180)
+
+[node name="Tablero2" type="Sprite2D" parent="pared"]
+y_sort_enabled = true
+position = Vector2(161, -97)
+scale = Vector2(5.16125, 4.07875)
+texture = ExtResource("6_xu7w0")

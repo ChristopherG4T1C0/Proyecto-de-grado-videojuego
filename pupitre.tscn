@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://0wpxphqh38i3"]
+
+[ext_resource type="Texture2D" uid="uid://dqj2uqlcgbylu" path="res://sprites para el proyecto/pupitre sin nada.png" id="1_2g20p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_taj2j"]
+size = Vector2(91.25, 100)
+
+[node name="pupitre" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9, -33)
+scale = Vector2(3.96875, 3.6875)
+texture = ExtResource("1_2g20p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_taj2j")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bswqttjue1eyg"]
+
+[ext_resource type="Texture2D" uid="uid://hh3jbr7keveb" path="res://sprites para el proyecto/profe gato.png" id="1_kptaq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ql1xq"]
+radius = 3.39823
+height = 13.1398
+
+[node name="prefesor gato" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(17, -20)
+scale = Vector2(4.39844, 4.41406)
+texture = ExtResource("1_kptaq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -29)
+scale = Vector2(4.39844, 4.41406)
+shape = SubResource("CapsuleShape2D_ql1xq")

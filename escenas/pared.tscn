@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://o31p6osmv0kt"]
+
+[ext_resource type="Texture2D" uid="uid://xxtyr2qdjg64" path="res://sprites para el proyecto/pared de ladrillos.png" id="1_ihfkr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdpxo"]
+size = Vector2(1169, 71)
+
+[node name="pared" type="StaticBody2D"]
+position = Vector2(-124, 0)
+
+[node name="ladrillos" type="Sprite2D" parent="."]
+position = Vector2(-244, -92)
+scale = Vector2(3.91875, 3.375)
+texture = ExtResource("1_ihfkr")
+
+[node name="ladrillos2" type="Sprite2D" parent="ladrillos"]
+position = Vector2(99.5868, 0)
+texture = ExtResource("1_ihfkr")
+
+[node name="ladrillos3" type="Sprite2D" parent="ladrillos"]
+position = Vector2(198.76, 0)
+texture = ExtResource("1_ihfkr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(144.5, -35.5)
+shape = SubResource("RectangleShape2D_fdpxo")
